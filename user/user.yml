@@ -1,2 +1,13 @@
 server:
     port: 8002
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user_service
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dll-auto: update
