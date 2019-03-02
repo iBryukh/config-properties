@@ -1,5 +1,5 @@
 server:
-    port: 8002
+  port: 8002
 
 spring:
   datasource:
@@ -11,3 +11,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         dll-auto: update
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/user_service
+    user: postgres
+    password: root
