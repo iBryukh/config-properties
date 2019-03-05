@@ -6,6 +6,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/user_service
     username: postgres
     password: root
+    hikari:
+      data-source-class-name: org.postgresql.ds.PGSimpleDataSource
+      maximum-pool-size: 5
+      connection-timeout: 30000 # default
+      max-lifetime: 1800000 # 30 minutes
+
   jpa:
     properties:
       hibernate:
