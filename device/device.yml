@@ -11,3 +11,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         dll-auto: update
+        jdbc:
+          lob:
+            non_contextual_creation: true
+      open-in-view: false
