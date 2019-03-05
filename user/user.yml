@@ -7,10 +7,10 @@ spring:
     username: postgres
     password: root
     hikari:
-      data-source-class-name: org.postgresql.ds.PGSimpleDataSource
       maximum-pool-size: 5
       connection-timeout: 30000 # default
       max-lifetime: 1800000 # 30 minutes
+    type: com.zaxxer.hikari.HikariDataSource
 
   jpa:
     properties:
