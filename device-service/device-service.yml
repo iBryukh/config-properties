@@ -18,6 +18,6 @@ spring:
     open-in-view: false
   flyway:
       enabled: true
-      url: jdbc:postgresql://localhost:5432/user_service
+      url: jdbc:postgresql://localhost:5432/device_service
       user: postgres
       password: root
