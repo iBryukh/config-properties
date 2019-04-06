@@ -15,6 +15,5 @@ zuul:
   routes:
     user-service: /user-service/**
     device-service: /device-service/**
-    authentication-service: /authentication-service/**
   ignored-services: '*'
   sensitiveHeaders: Cookie,Set-Cookie
