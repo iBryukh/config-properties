@@ -24,15 +24,22 @@ flyway:
   user: postgres
   password: root
 
-spring.jpa.database: "POSTGRESQL"
-spring.datasource.platform:  "postgres"
-spring.jpa.show-sql: "true"
-spring.database.driverClassName: "org.postgresql.Driver"
-spring.datasource.url: "jdbc:postgresql://localhost:5432/auth_service"
-spring.datasource.driver-class-name: "org.postgresql.Driver"
-spring.datasource.username: "postgres"
-spring.datasource.password: "root"
-spring.datasource.testWhileIdle: "true"
-spring.datasource.validationQuery: "SELECT 1"
-spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
-signing.key: "345345fsdfsf5345"
+spring:
+  jpa:
+    database: "POSTGRESQL"
+    show-url: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+  database:
+    driverClassName: "org.postgresql.Driver"
+  datasource:
+    platform:  "postgres"
+    url: "jdbc:postgresql://localhost:5432/auth_service"
+    driver-class-name: "org.postgresql.Driver"
+    username: "postgres"
+    password: "root"
+    testWhileIdle: "true"
+    validationQuery: "SELECT 1"
+signing:
+  key: "345345fsdfsf5345"
